@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos Base */
+@layer base {
+    body {
+        @apply text-justify;
+    }
+}
+
+/* Estilos adicionales */
+@layer components {
+
+}
+/* Usa x-cloak para ocultar elementos del display hasta que Alpine se haya cargado por completo. */
+[x-cloak] { display: none; }
