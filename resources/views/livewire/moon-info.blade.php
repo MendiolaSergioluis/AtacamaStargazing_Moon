@@ -1,4 +1,4 @@
-<div wire:poll class="w-full h-full py-10 px-4 text-slate-700">
+<div class="w-full h-full py-10 px-4 text-slate-700">
     <div class="m-auto w-full md:max-w-4xl">
         <h1 class="text-3xl lg:text-4xl font-bold pb-6 text-left">@lang('moon.The Moon in San Pedro de Atacama')</h1>
         <h2 class="text-2xl lg:text-3xl font-semibold">
