@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\App;
 use Livewire\Component;
 
@@ -19,7 +20,7 @@ class HomePage extends Component
      * @param string $lang
      * @return void
      */
-    public function mount($lang)
+    public function mount(string $lang) : void
     {
         $this->lang = $lang;
         App::setLocale($lang);
@@ -34,7 +35,7 @@ class HomePage extends Component
      * @param string $lang
      * @return void
      */
-    public function ChangeLang($lang)
+    public function ChangeLang(string $lang) : void
     {
         $this->lang = $lang;
         App::setLocale($lang);
@@ -48,9 +49,9 @@ class HomePage extends Component
      *
      * Renderiza la vista livewire.home-page.
      *
-     * @return \Illuminate\Contracts\View\View
+     * @return View
      */
-    public function render()
+    public function render(): View
     {
         return view('livewire.home-page')->title(__('moon.moon'));
     }
